@@ -23,8 +23,8 @@ window.addEventListener('scroll', (event) => {
 
     // section 2
     let section2topvalue = section2.getBoundingClientRect().top;
-    // console.log(section2topvalue);
-    if (section2topvalue < -238) {
+    //console.log(section2topvalue);
+    if (section2topvalue < -372) {
         section2.style.opacity = 0;
         section2.style.transition = '2s';
     }
@@ -53,12 +53,12 @@ window.addEventListener('scroll', (event) => {
 
     // section 4
     let section4topvalue = section4.getBoundingClientRect().top;
-    // console.log(section4topvalue);
-    if (section4topvalue < -131) {
+    //console.log(section4topvalue);
+    if (section4topvalue < -342) {
         section4.style.opacity = 0;
         section4.style.transition = '2s';
     }
-    else if (section2topvalue < 980) {
+    else if (section4topvalue < 280) {
         section4.style.opacity = 1;
         section4.style.transition = '2s';
     }
@@ -68,31 +68,46 @@ window.addEventListener('scroll', (event) => {
 
     // section 5
     let section5topvalue = section5.getBoundingClientRect().top;
-    console.log(section5topvalue);
-    if (section5topvalue < -111) {
+    //console.log(section5topvalue);
+    if (section5topvalue < -342) {
         section5.style.opacity = 0;
         section5.style.transition = '2s';
     }
-    else if (section2topvalue < 355) {
+    else if (section5topvalue < 250) {
         section5.style.opacity = 1;
         section5.style.transition = '2s';
     }
     else {
         section5.style.opacity = 0;
     }
-
     // section 6
-    let imgSection6 = document.getElementById('img_section6');
-
     let section6topvalue = section6.getBoundingClientRect().top;
-    // console.log(sectiontopvalue);
-    if (section6topvalue < -30) {
-        // operations
-        imgSection6.style.right = 0;
-        imgSection6.style.transition = '2s';
+    // console.log(section6topvalue);
+    if (section6topvalue < -342) {
+        section6.style.opacity = 0;
+        section6.style.transition = '2s';
+    }
+    else if (section6topvalue < 250) {
+        section6.style.opacity = 1;
+        section6.style.transition = '2s';
     }
     else {
-        imgSection6.style.transition = '2s';
-        imgSection6.style.right = -600;
+        section6.style.opacity = 0;
     }
+
+    // section 7
+    let imgSection7 = document.getElementById('img_section7');
+
+    let section7topvalue = section7.getBoundingClientRect().top;
+    //console.log(section7topvalue);
+    if (section7topvalue < 137) {
+        // operations
+        imgSection7.style.left = 0;
+        imgSection7.style.transition = '2s';
+    }
+    else {
+        imgSection7.style.transition = '2s';
+        imgSection7.style.left = -600;
+    }
+
 })

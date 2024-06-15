@@ -36,11 +36,14 @@
 .container6{
     background-color: pink;
 }
-.section .img_Section3{
+.container7{
+    background-color: rgb(192, 255, 192);
+}
+.img_Section3{
     position: absolute;
     left: -600px;
 }
-.section .img_Section6{
+.img_Section7{
     position: absolute;
-    right: -600px;
+    left: -600px;
 }
