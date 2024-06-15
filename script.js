@@ -40,14 +40,59 @@ window.addEventListener('scroll', (event) => {
     let imgSection3 = document.getElementById('img_section3');
 
     let section3topvalue = section3.getBoundingClientRect().top;
-    console.log(section3topvalue);
+    // console.log(section3topvalue);
     if (section3topvalue < -30) {
         // operations
         imgSection3.style.left = 0;
         imgSection3.style.transition = '2s';
     }
-    else{
+    else {
         imgSection3.style.transition = '2s';
         imgSection3.style.left = -600;
+    }
+
+    // section 4
+    let section4topvalue = section4.getBoundingClientRect().top;
+    // console.log(section4topvalue);
+    if (section4topvalue < -131) {
+        section4.style.opacity = 0;
+        section4.style.transition = '2s';
+    }
+    else if (section2topvalue < 980) {
+        section4.style.opacity = 1;
+        section4.style.transition = '2s';
+    }
+    else {
+        section4.style.opacity = 0;
+    }
+
+    // section 5
+    let section5topvalue = section5.getBoundingClientRect().top;
+    console.log(section5topvalue);
+    if (section5topvalue < -111) {
+        section5.style.opacity = 0;
+        section5.style.transition = '2s';
+    }
+    else if (section2topvalue < 355) {
+        section5.style.opacity = 1;
+        section5.style.transition = '2s';
+    }
+    else {
+        section5.style.opacity = 0;
+    }
+
+    // section 6
+    let imgSection6 = document.getElementById('img_section6');
+
+    let section6topvalue = section6.getBoundingClientRect().top;
+    // console.log(sectiontopvalue);
+    if (section6topvalue < -30) {
+        // operations
+        imgSection6.style.right = 0;
+        imgSection6.style.transition = '2s';
+    }
+    else {
+        imgSection6.style.transition = '2s';
+        imgSection6.style.right = -600;
     }
 })
